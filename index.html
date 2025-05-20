@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head href="UTF-8">
+        <title>JAckah_WEB101</title>
+        
+        <!-- Stylesheet -->
+        <link rel="stylesheet" href="styles.css" />
+    </head>
+
+    <body>
+        <!-- Navigation Bar -->
+        <div class="navbar">
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#schedule">Schedule</a></li>
+                <li><a href="#links">Links</a></li>
+                <li><button id="theme-button">Toggle Dark Mode</button></li>
+                <button onclick="toggleMusic()">Play/Pause Music</button>
+            </ul>
+        </div>
+        <audio id="background-music" src="images/KAYTRANADA.mp3" loop autoplay></audio>
+        <!-- Home Section -->
+        <div id="home" class="header-container">
+            <div class="header-item">
+                <img src="images/Web101Model a.png" alt="Logo" class="header-img">
+            </div>
+            <div class="header-center">
+                <h1 id="page-title">Secondhand Swap and Fashion Show</h1>
+            </div>
+            <div class="rsvp-buttons">
+                <a href="#rsvp"><button class="header-button">Sign Up</button></a>
+                <a href="#links"><button class="header-button">Learn More</button></a>
+            </div>
+            <img src="images/catwalk.gif" alt="catwalk" class="gif-inline">
+        </div>
+
+        <!-- About Section -->
+        <section id="about">
+            <h2>About The Event</h2>
+            <p>Join us for a unique Secondhand Fashion Show & Clothing Swap, where sustainability meets styling!
+                Watch our models walk the runway in secondhand clothing styled by our team.
+                Before or after the show, swap your gently used clothing for new gently used pieces, refreshing your wardrobe in an eco-friendly way.
+            </p>
+        </section>
+
+        <!-- Schedule Section -->
+        <section id="schedule">
+            <div class="event-header">
+                <h2>Event Schedule</h2>
+            </div>
+            <table>
+                <tr>
+                    <th>Time</th>
+                    <th>Event</th>
+                    <th>Location</th>
+                </tr>
+                <tr>
+                    <td>10:00 AM</td>
+                    <td>Entry For Fashion/ Place to Drop Off Secondhand Clothing for Swapping</td>
+                    <td>Runway Hall Entrance</td>
+                </tr>
+                <tr>
+                    <td>11:30 AM</td>
+                    <td>Fall/Winter 26 Fashion Show</td>
+                    <td>Runway Hall</td>
+                </tr>
+                <tr>
+                    <td>1:00 PM</td>
+                    <td>Designer Post Show Talk: Behind the Show</td>
+                    <td>Conference Room A</td>
+                </tr>
+                <tr>
+                    <td>1:15 PM</td>
+                    <td>Secondhand Swap Event</td>
+                    <td>Outdoor Plaza</td>
+                </tr>
+                <tr>
+                    <td>5:00 PM</td>
+                    <td>Closing Remarks, Networking and Questions</td>
+                    <td>Outside Stage</td>
+                </tr>
+            </table>
+        </section>
+        <div id="rsvp">
+            <h2>RSVP</h2>
+            <p>Total RSVPs: <span id="rsvp-count"></span></p>
+            <div class="rsvp-container">
+                <div class="rsvp-para">
+                    <p>You have some lightly worn clothes you want to get rid of? You like the ability to watch models run the runway in secondhand clothing given a new life?
+                    Well RSVP for our Fashion Show/Swap Event.</p>
+                    <img src="images/Rsvp.gif" width="200">
+                </div>
+                <div class="rsvp-participants">
+
+                </div>
+            </div>
+            <!-- Sign RSVP Form -->
+            <div class="form-container">
+                <form id="rsvp-form" title="rsvp-form">
+                    <label for="name-input">Name</label>
+                    <input type="text" id="name-input" name="name">
+                    <label for="email-input">Email</label>
+                    <input type="email" id="email-input" name="email">
+                    <label for="phone-input">Phone</label>
+                    <input type="tel" id="phone-input" name="phone">
+                    <!-- Attendance Field -->
+                    <label>Will you attend?</label><br>
+                    <input type="radio" id="yes" name="attendance" value="Yes" required>
+                    <label for="yes">Yes</label><br>
+                    <input type="radio" id="no" name="attendance" value="No">
+                    <label for="no">No</label><br><br>
+                </form>
+                <!-- Submit button -->
+                <button id="rsvp-button">Submit RSVP</button>
+            </div>
+        </div>
+        <div id="success-modal" class="modal">
+            <div class="modal-container">
+                <button id="close-button">Close</button>
+                <div id="modal-item">
+                    <p>Congrats Fashionista you have RSVP'D for the Fashion Show/Swap Event</p>
+                </div>
+                <div id="modal-item" class="modal-image">
+                    <img src="images/Web101Model.png" alt="Logo">
+                </div>
+            </div>
+        </div>
+        <!-- Links Section -->
+        <section id="links" class="useful-links">
+            <h2>Useful Links</h2>
+            <ul>
+                <li><a href="https://party.pro/swap/">Our Inspiration</a></li>
+                <li><a href="https://biasedbydesign.com/">Learn More</a></li>
+            </ul>
+        </section>
+
+        <!-- Footer -->
+        <div class="footer">
+            <a href="https://virgilabloh.com/free-game/" class="footer-link">Virgil's Free Game</a>
+            <a href="https://www.vogue.com" class="footer-link">The Fashion Magzine for Info</a>
+        </div>
+        <script src="script.js"></script>
+    </body>
+</html>
